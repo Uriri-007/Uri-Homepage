@@ -38,27 +38,11 @@ header * {
 
 .about-me {
     background-color: var(--uri-white);
-    max-width: 600px;
-    max-height: 400px;
     width: 40%;
     padding: 2rem;
     box-shadow: 3px 3px 5px var(--uri-gray);
     position: sticky;
     top: 0.5rem;
-}
-
-header::before {
-    content: " ";
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    border-bottom: 60vh solid var(--uri-white);
-    border-right: 100vw solid var(--uri-white);
-    border-left: 100vw solid transparent;
-    border-top: 40vh solid transparent;
 }
 
 main {
@@ -78,7 +62,7 @@ main>h1 {
 }
 
 main, main * {
-        border: 1px solid #000;
+    border: 1px solid #000;
 }
 
 .my-projects {
@@ -94,4 +78,25 @@ main, main * {
 footer {
     grid-area: 3 / 1 / 4 / 2;
     background: #e61549;
+}
+
+@media screen and (min-width: 1000px) {
+  .about-me {
+    max-width: 600px;
+    max-height: 400px;
+  }
+  
+  header::before {
+    content: " ";
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    border-bottom: 60vh solid var(--uri-white);
+    border-right: 100vw solid var(--uri-white);
+    border-left: 100vw solid transparent;
+    border-top: 40vh solid transparent;
+}
 }
