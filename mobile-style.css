@@ -28,11 +28,6 @@
   
   main {
     height: auto;
-    border: 1px solid #f00;
-  }
-  
-  main * {
-    border: 1px solid #000;
   }
   
   main>h1 {

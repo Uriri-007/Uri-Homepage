@@ -27,6 +27,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0 1rem;
 }
 
 header * {
@@ -38,7 +39,7 @@ h1 {
 }
 
 .hero-img {
-    max-width: max(500px, 40%);
+    max-width: 40%;
     max-height: 500px;
     z-index: 2;
 }
@@ -71,6 +72,20 @@ main>h1 {
     top: 0.5rem;
 }
 
+.my-projects * {
+    border: 1px solid;
+}
+
+.my-projects {
+    display: grid;
+    grid-template: repeat(2, max(350px, 40vh)) / repeat(3, 1fr);
+    gap: 3rem;
+    width: 100%;
+}
+
+.my-projects>div>img {
+    width: 100%;
+}
 
 footer {
     grid-area: 3 / 1 / 4 / 2;
@@ -88,7 +103,8 @@ footer {
 
 .footer-img {
     max-width: 500px;
-    max-height: 500px;
+    width: 30%;
+    border: 1px solid;
 }
 
 footer li {
