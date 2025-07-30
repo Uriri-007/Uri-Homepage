@@ -1,4 +1,6 @@
-*, *::after, *::before {
+*,
+*::after,
+*::before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -72,19 +74,51 @@ main>h1 {
     top: 0.5rem;
 }
 
-.my-projects * {
-    border: 1px solid;
-}
-
 .my-projects {
     display: grid;
-    grid-template: repeat(2, max(350px, 40vh)) / repeat(3, 1fr);
+    grid-template: repeat(2, max(350px, 30vh)) / repeat(3, 1fr);
     gap: 3rem;
     width: 100%;
 }
 
+.my-projects>div {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem;
+    box-shadow: 2px 2px 4px var(--uri-gray);
+}
+
 .my-projects>div>img {
     width: 100%;
+}
+
+.my-projects>div>section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.description {
+    font-size: var(--uri-sm-fsz);
+    padding: 0 1rem;
+    text-align: center;
+}
+
+.view-icon {
+    display: flex;
+    gap: 16px;
+}
+
+.view-icon>a {
+    text-decoration: none;
+    color: var(--uri-black);
 }
 
 footer {
@@ -95,6 +129,8 @@ footer {
     gap: 2rem;
     background-color: var(--uri-dk-trans);
     padding: 1rem;
+    position: relative;
+    
 }
 
 /* footer * {
@@ -102,13 +138,18 @@ footer {
 } */
 
 .footer-img {
-    max-width: 500px;
     width: 30%;
-    border: 1px solid;
 }
 
 footer li {
     list-style: none;
+}
+
+footer>p {
+    position: absolute;
+    bottom: 8px;
+    font-size: var(--uri-avg-fsz);
+    font-weight: 700;
 }
 
 .collab {
@@ -127,20 +168,23 @@ footer li {
 /* Some minute responsiveness */
 
 @media screen and (min-width: 1080px) {
-  .about-me {
-    max-width: 500px;
-  }
-  
-  header::before {
-    content: " ";
-    width: 200px;
-    height: 100vh;
-    position: absolute;
-    background-color: var(--uri-white);
-    top: 0;
-    left: 200px;
-    z-index: 1;
-    transform: skew(40deg);
-}
-
+    .about-me {
+        max-width: 500px;
+    }
+    
+    header::before {
+        content: " ";
+        width: 200px;
+        height: 100vh;
+        position: absolute;
+        background-color: var(--uri-white);
+        top: 0;
+        left: 200px;
+        z-index: 1;
+        transform: skew(40deg);
+    }
+    
+    .footer-img {
+        max-width: 500px;
+    }
 }

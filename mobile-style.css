@@ -43,10 +43,23 @@
   
   footer {
     height: auto;
-    flex-direction: column;
+    flex-direction: column-reverse; 
+  }
+  
+  .collab {
+    z-index: 2;
+    margin-bottom: 4rem;
   }
   
   .footer-img {
     max-width: 300px;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    filter: blur(2px);
   }
 }
