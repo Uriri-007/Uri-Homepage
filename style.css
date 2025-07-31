@@ -47,7 +47,7 @@ h1 {
 
 .about-me {
   background-color: var(--uri-white);
-  padding: 2rem;
+  padding: 1rem;
   box-shadow: 3px 3px 5px var(--uri-gray);
   position: sticky;
   top: 0.5rem;
@@ -55,6 +55,7 @@ h1 {
 
 .about-me > p {
   font-size: var(--uri-avg-fsz);
+  margin-top: 8px;
 }
 
 main {
