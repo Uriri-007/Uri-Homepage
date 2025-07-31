@@ -5,9 +5,10 @@
   }
   
   header {
+    height: 100vh;
     flex-direction: column-reverse;
-    row-gap: 5rem;
-    padding-top: 1rem;
+    justify-content: space-between;
+    padding: 1rem 0;
     background: linear-gradient(180deg, var(--uri-gray), var(--uri-white));
   }
   
@@ -35,6 +36,7 @@
     background-color: inherit;
     border-radius: 0%;
     top: 0;
+    margin-bottom: 8px;
   }
   
   .my-projects {
