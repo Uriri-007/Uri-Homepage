@@ -6,7 +6,6 @@
   
   header {
     flex-direction: column-reverse;
-    justify-content: space-between;
     row-gap: 5rem;
     padding-top: 1rem;
     background: linear-gradient(180deg, var(--uri-gray), var(--uri-white));
