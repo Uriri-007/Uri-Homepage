@@ -16,7 +16,6 @@
     border-radius: 40%;
     width: 70%;
     max-width: 250px;
-    height: 250px;
     align-self: flex-start;
     z-index: 3;
   }
@@ -33,14 +32,17 @@
   
   main>h1 {
     position: relative;
+    border: none;
+    background-color: inherit;
+    border-radius: 0%;
+    top: 0;
   }
   
   .my-projects {
-    display: grid;
     grid-template: repeat(6, max(350px, 35vw)) / 1fr;
     row-gap: 2rem;
   }
-  
+
   .view-icon {
     gap: 10px;
   }
