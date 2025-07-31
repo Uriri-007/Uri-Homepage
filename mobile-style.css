@@ -37,7 +37,7 @@
   
   .my-projects {
     display: grid;
-    grid-template: repeat(6, 350px) / 1fr;
+    grid-template: repeat(6, max(350px, 35vw)) / 1fr;
     row-gap: 1rem;
   }
   
