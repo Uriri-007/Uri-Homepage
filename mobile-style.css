@@ -9,6 +9,7 @@
     flex-direction: column-reverse;
     row-gap: 5rem;
     padding-top: 1rem;
+    background: linear-gradient(180deg, var(--uri-gray), var(--uri-white));
   }
   
   .hero-img {
@@ -34,16 +35,20 @@
     position: relative;
   }
   
-  
   .my-projects {
     display: grid;
     grid-template: repeat(6, max(350px, 35vw)) / 1fr;
-    row-gap: 1rem;
+    row-gap: 2rem;
+  }
+  
+  .view-icon {
+    gap: 10px;
   }
   
   footer {
     height: auto;
-    flex-direction: column-reverse; 
+    flex-direction: column-reverse;    
+    background: linear-gradient(180deg, var(--uri-white), var(--uri-white), var(--uri-white), var(--uri-gray));
   }
   
   .collab {
@@ -52,14 +57,10 @@
   }
   
   .footer-img {
-    max-width: 300px;
-    width: 50%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    filter: blur(2px);
+    display: none;
+  }
+  
+  footer>p {
+    color: var(--uri-white);
   }
 }
