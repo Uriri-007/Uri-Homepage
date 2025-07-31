@@ -75,18 +75,19 @@ main > h1 {
   background-color: var(--uri-white);
   position: sticky;
   top: 0.5rem;
-  border: 3px solid var(--uri-gray);
   border-radius: 5px;
 }
 
 .my-projects {
   display: grid;
-  grid-template: repeat(2, max(350px, 30vh)) / repeat(3, 1fr);
+  grid-template: repeat(2, max(350px, 40%)) / repeat(3, 1fr);
   gap: 3rem;
   width: 100%;
+  height: 80%;
   justify-content: space-between;
   justify-items: center;
   align-content: center;
+  z-index: 2;
 }
 
 .my-projects > div {
