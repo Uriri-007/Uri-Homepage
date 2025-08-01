@@ -6,10 +6,9 @@
   
   header {
     flex-direction: column-reverse;
-    justify-content: space-between;
+    row-gap: 4rem;
     padding: 1rem;
     background: linear-gradient(180deg, var(--uri-gray), var(--uri-white));
-    height: 100vh;
   }
   
   .hero-img {
