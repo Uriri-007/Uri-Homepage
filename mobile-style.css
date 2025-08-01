@@ -6,17 +6,19 @@
   
   header {
     flex-direction: column-reverse;
-    row-gap: 5rem;
-    padding-top: 1rem;
+    justify-content: space-between;
+    padding: 1rem;
     background: linear-gradient(180deg, var(--uri-gray), var(--uri-white));
+    height: 100vh;
   }
   
   .hero-img {
-    border-radius: 40%;
-    width: 70%;
+    width: 50%;
     max-width: 250px;
     align-self: flex-start;
     z-index: 3;
+    border: none;
+    box-shadow: -5px 5px 8px var(--uri-black);
   }
   
   .about-me {

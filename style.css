@@ -8,8 +8,8 @@
 
 :root {
   --uri-lg-fsz: max(27px, calc(2vw + 4px));
-  --uri-avg-fsz: max(16px, calc(0.5vw + 10px));
-  --uri-sm-fsz: max(14px, calc(0.5vw + 4px));
+  --uri-avg-fsz: max(16px, calc(0.5vw + 14px));
+  --uri-sm-fsz: max(14px, calc(0.5vw + 8px));
   --uri-black: #000;
   --uri-white: #fff;
   --uri-gray: #12121eaa;
@@ -27,9 +27,10 @@ header {
   grid-area: 1 / 1 / 2 / 2;
   background: var(--uri-gray);
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  padding: 0 1rem;
+  gap: 3rem;
+  padding: 2rem;
   font-family: 'outfit', 'sora', sans-serif;
 }
 
@@ -42,8 +43,12 @@ h1 {
 }
 
 .hero-img {
-  width: 40%;
+  width: 30%;
   z-index: 2;
+  border: 5px solid var(--uri-gray);
+  border-radius: 50%;
+  box-shadow: 8px 8px 12px var(--uri-black);
+  padding: 1rem;
 }
 
 .about-me {
@@ -181,9 +186,8 @@ footer {
 }
 
 .footer-img {
-  width: 30%;
-  border: 8px solid var(--uri-dk-blue);
-  padding: 3rem;
+  width: 20%;
+  border: 8px solid var(--uri-dk-trans);
   border-radius: 50%;
   box-shadow: 8px 8px 12px var(--uri-black);
 }
