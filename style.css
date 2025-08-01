@@ -7,9 +7,9 @@
 }
 
 :root {
-  --uri-lg-fsz: max(24px, calc(3vw + 8px));
-  --uri-avg-fsz: max(1rem, calc(1.5vw + 4px));
-  --uri-sm-fsz: max(14px, calc(1vw + 2px));
+  --uri-lg-fsz: max(27px, calc(2vw + 4px));
+  --uri-avg-fsz: max(16px, calc(0.5vw + 10px));
+  --uri-sm-fsz: max(14px, calc(0.5vw + 4px));
   --uri-black: #000;
   --uri-white: #fff;
   --uri-gray: #12121eaa;
@@ -52,11 +52,19 @@ h1 {
   box-shadow: 3px 3px 5px var(--uri-gray);
   position: sticky;
   top: 0.5rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
 }
 
 .about-me>p {
   font-size: var(--uri-avg-fsz);
   margin-top: 8px;
+}
+
+.about-me .icon {
+  align-self: flex-end;
 }
 
 main {
@@ -164,10 +172,20 @@ footer {
   padding: 1rem;
   position: relative;
   font-family: 'outfit', 'sora', sans-serif;
+  background: linear-gradient(
+    -45deg,
+    var(--uri-gray),
+    var(--uri-white),
+    var(--uri-white)
+  );
 }
 
 .footer-img {
   width: 30%;
+  border: 8px solid var(--uri-dk-blue);
+  padding: 3rem;
+  border-radius: 50%;
+  box-shadow: 8px 8px 12px var(--uri-black);
 }
 
 footer li {
@@ -233,6 +251,10 @@ address {
   
   .footer-img {
     max-width: 500px;
+  }
+
+  .my-projects>div {
+    max-width: 1000px;
   }
   
   .my-projects>div:hover {
