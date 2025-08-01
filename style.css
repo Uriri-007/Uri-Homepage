@@ -98,6 +98,7 @@ main>h1 {
   gap: 0.5rem;
   padding: 1rem;
   box-shadow: 2px 2px 4px var(--uri-gray);
+  transition: transform 0.3s linear;
 }
 
 .my-projects>div>img {
@@ -136,6 +137,7 @@ main>h1 {
   text-decoration: none;
   color: var(--uri-black);
   padding: 0.5rem;
+  transition: transform 0.3s linear;
 }
 
 .icon-link:hover {
