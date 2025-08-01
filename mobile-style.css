@@ -22,8 +22,12 @@
   
   .about-me {
     width: 70%;
-    margin: 0 1rem;
     align-self: flex-end;
+    row-gap: 8px;
+  }
+  
+  .about-me>p {
+    margin-top: 0;
   }
   
   main {
