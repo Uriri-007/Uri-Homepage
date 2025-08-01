@@ -143,13 +143,12 @@ main>h1 {
 
 .view-icon {
   display: flex;
-  gap: 16px;
+  column-gap: 1rem;
 }
 
 .icon-link {
   text-decoration: none;
   color: var(--uri-black);
-  padding: 0.5rem;
   transition: transform 0.3s linear;
 }
 
@@ -171,10 +170,9 @@ footer {
   grid-area: 3 / 1 / 4 / 2;
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 2rem;
+  justify-content: space-between;
   background-color: var(--uri-dk-trans);
-  padding: 1rem;
+  padding: 0 2rem;
   position: relative;
   font-family: 'outfit', 'sora', sans-serif;
   background: linear-gradient(
@@ -227,6 +225,7 @@ address {
 
 .icon {
   display: flex;
+  gap: 0.5rem;
 }
 
 /* Some minute responsiveness */
@@ -326,5 +325,13 @@ address {
   
   .my-projects>div:hover {
   transform: scale(1.1);
+}
+
+footer {
+    padding: 3rem 2rem;
+}
+
+.collab, .footer-img {
+  margin-bottom: 2rem;
 }
 }

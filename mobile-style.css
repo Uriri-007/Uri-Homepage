@@ -47,20 +47,22 @@
     grid-template: repeat(6, max(350px, 35vw)) / 1fr;
     row-gap: 2rem;
   }
-
-  .view-icon {
-    gap: 10px;
-  }
   
   footer {
     height: auto;
     flex-direction: column-reverse;    
     background: linear-gradient(180deg, var(--uri-white), var(--uri-white), var(--uri-white), var(--uri-gray));
+    padding: 0 2rem;
   }
   
   .collab {
     z-index: 2;
     margin-bottom: 4rem;
+    row-gap: 0.5rem;
+  }
+  
+  .collab>h1 {
+    margin-bottom: 0.5rem;
   }
   
   .footer-img {
