@@ -167,7 +167,7 @@ footer {
   align-items: center;
   justify-content: space-between;
   background-color: var(--uri-dk-trans);
-  padding: 0 2rem;
+  padding: 2rem;
   position: relative;
   font-family: 'outfit', 'sora', sans-serif;
   background: linear-gradient(-45deg,
@@ -251,6 +251,10 @@ address {
   
   .my-projects>div:hover {
     transform: scale(1.1);
+  }
+  
+  footer {
+    height: 100vh;
   }
 }
 
