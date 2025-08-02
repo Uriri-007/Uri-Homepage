@@ -5,9 +5,10 @@
   }
   
   header {
+    height: 100vh;
     flex-direction: column-reverse;
-    row-gap: 4rem;
-    padding: 1rem;
+    justify-content: space-between;
+    padding: 3rem 1rem;
     background: linear-gradient(180deg, var(--uri-gray), var(--uri-white));
   }
   
@@ -52,7 +53,7 @@
     height: auto;
     flex-direction: column-reverse;    
     background: linear-gradient(180deg, var(--uri-white), var(--uri-white), var(--uri-white), var(--uri-gray));
-    padding: 0 2rem;
+    padding: 1rem 2rem;
     gap: 1rem;
   }
   
