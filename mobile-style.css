@@ -53,6 +53,7 @@
     flex-direction: column-reverse;    
     background: linear-gradient(180deg, var(--uri-white), var(--uri-white), var(--uri-white), var(--uri-gray));
     padding: 0 2rem;
+    gap: 1rem;
   }
   
   .collab {
@@ -66,7 +67,9 @@
   }
   
   .footer-img {
-    display: none;
+    width: 50%;
+    align-self: flex-end;
+    box-shadow: 5px 5px 8px var(--uri-black);
   }
   
   footer>p {
