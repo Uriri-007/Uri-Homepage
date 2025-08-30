@@ -194,6 +194,10 @@ footer>p {
   font-weight: 700;
 }
 
+.download {
+  font-style: italic;
+}
+
 .collab {
   display: flex;
   flex-direction: column;
